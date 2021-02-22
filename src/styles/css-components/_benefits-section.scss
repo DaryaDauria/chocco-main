@@ -1,0 +1,25 @@
+.benefits-section {
+
+height: 100%;
+  
+ 
+ 
+  &:before {
+    content: url("../image/tree4.png");
+  position: absolute;
+  top: 17%;
+
+}
+
+    
+ 
+@include tablets {
+  &:before,  &:after {
+    display: none;
+  }
+}
+
+
+  
+  
+}

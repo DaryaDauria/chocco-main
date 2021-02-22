@@ -1,0 +1,31 @@
+
+.fhone-number {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  white-space: nowrap;
+}
+
+
+.fhone-number-icon {
+  width: 0.76rem;
+  height: 0.76rem;
+ fill: white;
+  margin-right: 0.3rem;
+  flex-shrink: 0;
+ 
+
+}
+
+
+.fhone-number__text {
+  font-size: 1.2rem;
+  &--green {
+    color: #497870;
+  }
+}
+
+// .fhone-number-icon__img {
+
+// }

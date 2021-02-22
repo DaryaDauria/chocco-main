@@ -1,0 +1,121 @@
+.hero { 
+  background:  url("../image/comp2.png") right no-repeat;
+  background-color: $blue;
+height: 100%;
+  min-height: 36rem;
+  color: #fff;
+  position: relative;
+
+
+  
+
+  @include tablets {
+ 
+    background-position: right bottom 88%;
+      
+  &:before {
+    content: url("../image/comp768.png");
+    position: absolute;
+    right: 30%;
+    top: 5%;
+      }
+     
+}
+
+
+  &:before {
+    content:url("../image/chocco.png");
+    position: absolute;
+  right: 5%;
+  top: 15%;
+
+  }
+
+  @include phones {
+    &:before {
+      content: none;
+  }
+  }
+  
+    }
+
+
+ 
+
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 1.6rem 0 2.7rem 0;
+
+  @include phones {
+    &:before {
+      content: url("../image/comp\ \(7\).png");
+      position: absolute;
+     top: 5%;
+     right: 10%;
+        }
+  }
+
+  &:after {
+    position: absolute;
+    bottom: -2.2rem;
+    content: url("../image/tree3.png");
+   
+      }
+      @include tablets {
+        &:after  {
+         display: none;
+  }
+
+
+}
+  }
+
+
+.hero__title-section{
+width: 40%;
+
+  @include tablets {
+    width: 100%;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+
+      }
+    }
+
+.hero__mine-title {
+  font-size: 2.7rem;
+  line-height: 1.1;
+  font-weight: bold;
+  margin-bottom: 1.4rem;
+  text-transform: uppercase;
+}
+
+.hero__title-desc {
+  
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+ 
+@include tablets {
+padding-right: 25%;
+padding-left: 25%;
+}
+}
+
+.hero__icons-section{
+  @include tablets {
+    display: none;
+  }
+  @include phones {
+    display: none;
+  }
+}
+
+
+

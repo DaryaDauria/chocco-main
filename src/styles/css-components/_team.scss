@@ -1,0 +1,158 @@
+.team {
+  padding: 5% 2%;
+
+
+
+  &--mobile{
+    display: none;
+  }
+}
+.team-section {
+  height: 100vh;
+  position: relative;
+  &::before {
+    content: url("../image/blue-berries.png");
+    position: absolute;
+    right: 1%;
+    bottom: 90%;
+    @include tablets {
+      content: none;
+    }
+  }
+}
+
+.team__title {
+  margin-bottom: 3rem;
+
+  @include tablets {
+    font-size: 2.3rem;
+    margin-bottom: 1.4rem;
+  }
+}
+.team__list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 0;
+
+ 
+  &--mobile{
+    display: none;
+
+    @include tablets {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+&--desktop {
+  @include tablets {
+    display: none;
+  }
+}
+}
+
+
+
+.team__item {
+  display: flex;
+  width: 11.5rem;
+ 
+  flex-direction: column;
+  margin-right: 1rem;
+  &:last-child {
+    margin-right: 0;
+  }
+ @include tablets{
+   margin-right: 0;
+   width: 10.5rem;
+
+ }
+}
+
+.team__avatar {
+height: 16rem;
+  margin-bottom: 1.2rem;
+position: relative;
+ @include tablets {
+   margin-bottom: 0.7rem;
+ }
+
+ 
+}
+
+.team__avatar-img {
+width: 100%;
+height: 100%;
+
+
+}
+
+.team__desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablets {
+    font-size: 0.9rem;
+  }
+ 
+
+}
+
+.team__name {
+  font-size: 1.2rem;
+  background: transparent;
+  text-align: center;
+  font-weight: bold;
+  color: #292929;
+  margin-bottom: 0.5rem;
+  position: relative;
+  cursor: pointer;
+  &:before {
+    content: url("../image/Polygon11.png");
+position: absolute;
+right: -8%;
+top: -12%;
+  }
+  @include tablets {
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+.team__position {
+ margin-bottom: 0.3rem;
+ text-align: center;
+  @include tablets {
+    margin-bottom: 0.2rem;
+
+  }
+}
+
+.team__feachure {
+  text-align: center;
+  font-weight: 300;
+
+  @include tablets {
+    
+padding: 0 2%;
+  }
+}
+
+.team__content {
+  overflow: hidden;
+  height: 0;
+transition: height .3s;
+
+}
+
+.team__content-block  {
+height: 19rem;
+ 
+}

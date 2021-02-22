@@ -1,0 +1,33 @@
+.socials {
+  margin-top: 1rem;
+
+  @include phones {
+    margin-top: 0.9rem;
+    padding: 0 35%;
+  }
+
+}
+
+.socials__list {
+  display: flex;
+
+
+  // @include phones {
+  //   margin-top: 0.9rem;
+  //   padding: 0 35%;
+  // }
+
+}
+
+.socials__item {
+
+  margin-right: 0.7rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  &:last-child {
+    margin-right: 0;
+  }
+
+}
+
+

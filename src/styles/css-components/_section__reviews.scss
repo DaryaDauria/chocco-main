@@ -1,0 +1,33 @@
+.section__reviews {
+ height: 100%;
+  bottom: -1.1rem;
+position: relative;
+
+@include tablets {
+  &:after, &:before {
+    display: none;
+  }
+}
+  
+   &:after {
+    content: url("../image/berries.png");
+    position: absolute;
+    top: -0.66rem;
+    right: 1.66rem;
+    
+   }
+   &:before {
+    content: url("../image/conp2.png");
+    position: absolute;
+    bottom: -10%;
+    
+   }
+
+   
+  }
+
+
+ 
+
+    
+  

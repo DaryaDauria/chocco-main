@@ -1,0 +1,38 @@
+.order-section {
+  background:  url("../image/cta.png");
+height: 100%;
+ position: relative;
+ padding: 3.44rem 4.66rem 2.66rem 4.55rem;
+
+ @include tablets{
+  &::before, &::after {
+    display: none;
+  } 
+ }
+
+ @include phones {
+   padding: 1%;
+ }
+
+
+ &::before {
+  position: absolute;
+  content: url("../image/tree6.png");
+  right: 0.55rem;
+  bottom: 0.55rem;
+  
+ }
+
+
+ &::after {
+   position: absolute;
+   content: url("../image/berrie.png");
+   bottom: 0.55rem;
+   
+ }
+
+ 
+}
+
+
+

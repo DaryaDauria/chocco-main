@@ -1,0 +1,43 @@
+.reviews__switcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.reviews__switcher-item{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 0.33rem solid transparent;
+  overflow: hidden;
+position: relative;
+@include tablets {
+  width: 3.5rem;
+  height: 3.7rem;
+}
+
+}
+
+.reviews__switcher-item.active {
+  border: 0.3rem solid $darkgreen;
+
+  }
+
+  .reviews__switcher-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+}
+
+.reviews__switcher-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: 100%;
+}

@@ -1,0 +1,52 @@
+.btn{
+  width: 9rem;
+height: 3.6rem;
+border-radius: 5.55rem;
+text-transform: uppercase;
+font-weight: 800;
+font-size: 1rem;
+border: none;
+
+@include tablets {
+  width: 7.3rem;
+  height: 2.6rem;
+  font-size: 0.8rem;
+}
+
+&--color--white{
+
+  background: #FFF ;
+  color: $darkgreen;
+
+  &:hover {
+    color: #FFF;
+    background: $darkgreen;
+    cursor: pointer;
+
+  }
+}
+&--color--green {
+  background: $darkgreen ;
+  color: #FFF;
+
+ 
+
+  &:hover {
+    background: #FFF ;
+  color: $darkgreen;
+    cursor: pointer;
+  }
+}
+
+
+ &--color--transparent {
+   background: transparent;
+   color: #497870;
+   cursor: pointer;
+
+   &:hover {
+color: $darkgreen;
+   }
+ }
+
+ }

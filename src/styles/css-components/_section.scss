@@ -1,0 +1,99 @@
+.section {
+height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+
+  &--font--color--green{
+    color: $darkgreen;
+
+    .section__title {
+      color: inherit;
+    }
+  }
+
+
+}
+
+
+
+.section__title{
+  font-size: 2.7rem;
+  margin-bottom: 4rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+
+&--form {
+
+  margin-bottom: 3.9rem;
+ 
+}
+
+&--product {
+
+  font-size: 2rem;
+text-align: left;
+  margin-bottom: 1.4rem;
+ 
+
+  @include tablets {
+
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.7rem;
+  }
+
+  @include phones {
+
+padding: 0 15%;
+  }
+
+
+}
+
+&
+
+&--headline {
+  margin-top: 11%;
+    margin-bottom: 1.2rem;
+    @include phones {
+     
+      margin-bottom: 0.5rem;
+    }
+
+  }
+&--reviews {
+margin-bottom: 2rem;
+}
+
+}
+
+.section__desc{
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 0 26%;
+
+
+@include phones {
+  padding: 0 2%;
+  text-align: center;
+
+}
+}
+
+
+.section__products {
+ 
+  height: 100%;
+  &:before {
+    content: url("../image/chocco2.png");
+    position: absolute;
+   top: 178%;
+   @include tablets {
+     content: none;
+   }
+  }
+}
+

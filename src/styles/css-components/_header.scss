@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+align-items: flex-start;
+}
+
+
+.fhone-number.header__fhone-number {
+  @include tablets{
+    display: none;
+      }
+
+      @include phones {
+    display: none;
+}
+}

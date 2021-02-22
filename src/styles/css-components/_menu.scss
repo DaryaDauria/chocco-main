@@ -1,0 +1,44 @@
+.menu {
+ margin: 0 1.66rem;
+ padding-top: 0.2rem;
+ 
+  @include tablets{
+display: none;
+  }
+  }
+
+.menu__list {
+  display: flex;
+  align-items: center; 
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+
+
+.menu__item {
+  margin-right: 1.5rem;
+&:last-child {
+  margin-right: 0;
+}
+&:hover {
+  cursor: pointer;
+ 
+  
+  }
+  margin-bottom: 1.5rem;
+  
+}
+
+
+.menu__link {
+white-space: nowrap;
+&:hover{
+  opacity:.7;
+}
+
+}
+
+
+ 

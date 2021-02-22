@@ -1,0 +1,49 @@
+.hamburger {
+  width: 1.33rem;
+  height: 1.33rem;
+  position: fixed;
+
+  top: 4%;
+  flex-direction: column;
+ right: 110%;
+  justify-content: space-between;
+  display: none;
+  z-index: 15;
+  cursor: pointer;
+  transition: all 0.4s;
+
+
+  
+  @include tablets {
+    right: 3%;
+    display: block;
+  }
+
+}
+
+.hamburger__plank {
+  display: block;
+  background: #fff;
+  height: 0.2rem;
+  border-radius: 0.55rem;
+  margin-bottom: 0.2rem;
+  
+
+}
+
+.hamburger--active{
+  .hamburger__plank {
+    &:nth-child(1){
+      opacity: 0;
+  }
+  &:nth-child(2){
+    transform: rotate(45deg);
+  }
+&:nth-child(3){
+  transform: rotate(-45deg) translateY(-0.3rem) translateX(0.2rem);
+}
+} 
+}
+
+ 
+ 

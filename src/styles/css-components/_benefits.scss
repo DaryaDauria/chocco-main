@@ -1,0 +1,61 @@
+.benefits {
+  display: flex;
+@include phones {
+  flex-direction: column;
+}
+
+}
+
+.benefits__item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
+
+ @include tablets {
+  &:before {
+    display: none;
+  }
+ }
+ 
+
+  @include phones {
+    padding: 0;
+    margin-bottom: 1rem;
+   
+
+  }
+
+  &:before {
+    content: url("../image/bolls.svg");
+    position: absolute;
+    top: 3rem;
+   right: 0;
+    transform: translateX(50%);
+
+  }
+
+
+   &:first-child {
+     padding-left: 0;
+
+   }
+
+   &:last-child {
+    
+padding-right: 0;
+
+&:before{
+  display: none;
+}
+   }
+
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+

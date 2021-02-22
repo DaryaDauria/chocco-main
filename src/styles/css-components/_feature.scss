@@ -1,0 +1,18 @@
+.feature {
+  display: flex;
+  
+}
+
+.feature__icon {
+  width: 2rem;
+  height: 1.9rem;
+  margin-right: 0.8rem;
+  fill: white;
+  flex-shrink: 0;
+}
+
+.feature__text {
+  font-size: 0.9rem;
+  max-width: 4.7rem;
+
+}

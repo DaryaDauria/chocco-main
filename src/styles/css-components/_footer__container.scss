@@ -1,0 +1,37 @@
+.footer__container {
+ 
+  display: flex;
+
+  justify-content: space-between;
+ padding: 1rem 0;
+
+  &-contacts {
+
+   @include phones{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+   }
+
+  }
+
+
+&-address {
+  font-size: 1.1rem;
+  color: #292929;
+  margin-bottom: 0.3rem;
+}
+
+@include phones {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+}
+}
+
+.footer__fhone-number {
+  @include phones {
+padding: 0 30%;
+  }
+}

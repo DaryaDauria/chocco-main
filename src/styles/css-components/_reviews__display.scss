@@ -1,0 +1,31 @@
+.reviews__display {
+ 
+  padding: 0.56rem 0px 1.88rem;
+  overflow: hidden;
+  position: relative;
+
+  
+  
+
+
+  &:before {
+    content: "";
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    border-radius: 50%;
+   position: absolute;
+  transform: translateX(-2.77rem);
+  top: -1.66rem;
+   left: 50%;
+  @include tablets {
+    padding: 0 11%;
+  }
+
+  }
+
+}
+
+
+

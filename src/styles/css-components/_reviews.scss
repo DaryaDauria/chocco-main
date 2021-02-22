@@ -1,0 +1,101 @@
+.reviews__list {
+  position: relative;
+  min-height: 10.2rem;
+}
+
+.reviews__item {
+  padding: 1.8rem 0 2.33rem 2.3rem ;
+  margin-bottom: 0.6rem;
+    background: url("../image/berries-grey.png") top 1.7rem right 0.27rem no-repeat;
+   background-size: 7rem 9rem;
+    display: flex;
+    align-items: center;
+    background-color: #F8FAF9; 
+    position: absolute;
+  pointer-events: none;
+  transition: .3s;
+  opacity: 0;
+
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-left: 0;
+  }
+  
+}
+
+.reviews__item.active {
+  opacity: 1;
+  position: static;
+  pointer-events: unset;
+}
+
+  
+
+.reviews__avatar {
+  width: 14.1rem;
+  height: 14.4rem;
+
+  @include tablets{
+    width: 6.2rem;
+    height: 6.3rem;
+    margin-top: 1.6rem;
+    margin-bottom: 2rem;
+  
+    
+  }
+}
+
+.reviews__avatar-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.reviews__content {
+  margin-left: 2.2rem;
+  flex: 1;
+
+text-align: start;
+
+@include tablets {
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+
+
+}
+
+.reviews__title {
+  font-size: 1.66rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+ color: #292929; 
+ @include tablets {
+   font-size: 1.3rem;
+ }
+}
+
+.reviews__text {
+  margin-bottom: 1.5rem;
+  padding-right: 9rem;
+
+  @include tablets {
+  text-align: center;
+  padding-right: 0;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  }
+}
+
+
+.reviews__avtor {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #292929;
+}
+
